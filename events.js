@@ -16,9 +16,21 @@ var article = document.getElementsByClassName("article-section")
 
 // have to add event listener (click 5, mouseover 1, mouseout 2, )
 
+// mouseover event listener
 title.addEventListener("mouseover", function() {
 	output.innerHTML = "You moved your mouse over the header";
   })
+
+// mouseout event listener
+title.addEventListener("mouseout", function() {
+	output.innerHTML = "You left Me!";
+})
+
+// color btn event listener
+
+colorBtn.addEventListener("click", function() {
+	
+})
 
 
 // article.addEventListener("click", function() {

@@ -1,0 +1,27 @@
+.blue {
+	color: blue;
+}
+
+.hulky {
+	font-size: 50px;
+}
+
+.border {
+	border: 1px solid black;
+}
+
+.round {
+	border-radius: 3px;
+}
+
+.bold {
+	font-weight: 3px;
+}
+
+.itali {
+	font-style: italic;
+}
+
+.block {
+	display: block;
+}
