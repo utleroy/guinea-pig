@@ -32,6 +32,18 @@ colorBtn.addEventListener("click", function() {
 	guineaPig.classList.toggle("blue");
 })
 
+hulkifyBtn.addEventListener("click", function() {
+	guineaPig.classList.add("hulky");
+})
+
+captureItBtn.addEventListener("click", function() {
+	guineaPig.classList.add("border");
+})
+
+roundedBtn.addEventListener("click", function() {
+	guineaPig.classList.add("round");
+})
+
 
 // article.addEventListener("click", function() {
 // 	output.innerHTML = 
