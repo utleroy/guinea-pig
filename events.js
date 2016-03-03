@@ -29,7 +29,7 @@ title.addEventListener("mouseout", function() {
 // color btn event listener
 
 colorBtn.addEventListener("click", function() {
-	
+	guineaPig.classList.toggle("blue");
 })
 
 
