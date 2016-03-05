@@ -12,7 +12,7 @@ var title = document.getElementById("page-title");
 var guineaPig = document.getElementById("guinea-pig");
 
 // getElementsByClassName always returns array.
-var article = document.getElementsByClassName("article-section")
+var articleEl = document.getElementsByClassName("article-section")
 
 // have to add event listener (click 5, mouseover 1, mouseout 2, )
 
@@ -33,7 +33,7 @@ colorBtn.addEventListener("click", function() {
 })
 
 hulkifyBtn.addEventListener("click", function() {
-	guineaPig.classList.add("hulky");
+	guineaPig.classList.toggle("hulky");
 })
 
 captureItBtn.addEventListener("click", function() {
@@ -50,6 +50,21 @@ roundedBtn.addEventListener("click", function() {
 // 	// going to return whatever is in the output-target <div>
 
 // })
+
+// Joe's explanation ***********************************************
+
+// var articleEl = document.getElementsByClassName("article-section");
+// console.log("articleEl", articleEl);
+
+// function handleSectionClick(mouseEvent) {
+// 	console.log(mouseEvent);
+// 	var elementText = mouseEvent.target.innerHTML;
+// 	outputEl.innerHTML = "You clicked on the " + elementText + "section"
+// }
+
+// for (var i = 0; i < articleEl.length; i++) {
+// 	articleEl.item(i).addEventListener("click", handleSectionClick);
+// }
 
 
 

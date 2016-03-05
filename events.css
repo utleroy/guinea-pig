@@ -11,6 +11,7 @@
 }
 
 .round {
+	border: 1px solid black;
 	border-radius: 10px;
 }
 
@@ -25,3 +26,4 @@
 .block {
 	display: block;
 }
+
