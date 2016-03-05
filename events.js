@@ -1,7 +1,6 @@
 // write out variables on paper to start
 
 var output = document.getElementById("output-target");
-console.log(output);
 var keypress = document.getElementById("keypress-input");
 var colorBtn = document.getElementById("add-color");
 var hulkifyBtn = document.getElementById("make-large");
@@ -10,6 +9,12 @@ var roundedBtn = document.getElementById("add-rounding");
 var header = document.getElementById("page-header");
 var title = document.getElementById("page-title");
 var guineaPig = document.getElementById("guinea-pig");
+
+keypress.addEventListener("keyup", function(event) {
+	output.innerHTML = keypress.value;
+
+//^^^^^^^^^^^^^ TO CAPTURE USER KEYPRESS ^^^^^^^^^^^^^^^^^
+})
 
 // getElementsByClassName always returns array.
 var articleEl = document.getElementsByClassName("article-section")
@@ -37,12 +42,23 @@ hulkifyBtn.addEventListener("click", function() {
 })
 
 captureItBtn.addEventListener("click", function() {
-	guineaPig.classList.add("border");
+	guineaPig.classList.toggle("border");
 })
 
 roundedBtn.addEventListener("click", function() {
-	guineaPig.classList.add("round");
+	guineaPig.classList.toggle("round");
 })
+
+for (var i = 0; i < articleEl.length; i++) {
+	articleEl[0].classList.add("bold");
+	articleEl[articleEl.length - 1].classList.add("itali");
+}
+
+var btns = document.getElementsByTagName("button");
+
+for (var i = 0; i < btns.length; i++) {
+	btns[i].classList.add("block");
+}
 
 
 // article.addEventListener("click", function() {

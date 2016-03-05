@@ -16,14 +16,16 @@
 }
 
 .bold {
-	font-weight: 3px;
+	font-weight: bold;
 }
 
 .itali {
+	font-weight: bold;
 	font-style: italic;
 }
 
 .block {
 	display: block;
+	width: 100px;
 }
 
